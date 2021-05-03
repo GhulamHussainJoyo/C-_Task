@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <style>
+
+     
+
+        button,.btn1{
+            
+            width: 70px;
+            height: 70px;
+           /* margin: 4px; */
+           vertical-align: top;
+           color: rgb(54, 37, 0);
+           font-size: 25px;
+           /* font-weight: bold; */
+           text-transform: capitalize;
+           border: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+
+
+
+        class="" style="width: 70px; height: 70px; border: none;"
+        class="" style="width: 70px; height: 70px; border: none;"
+        class="" style="width: 70px; height: 70px; border: none;"
+        class="" style="width: 70px; height: 70px; border: none;"
+        class="" style="width: 70px; height: 70px; border: none;"
+        class="" style="width: 70px; height: 70px; border: none;"
+        class="" style="width: 70px; height: 70px; border: none;"
+        class="" style="width: 70px; height: 70px; border: none;"
+        class="" style="width: 70px; height: 70px; border: none;"
+     -->
+
+
+    <div class="row my-5">
+
+        <div class="col-md-2 offset-5 my-2">
+            <p class="" onclick="btnPressed(0)" style="margin-left: 50%;">Tic Tac Toe</p>
+        </div>
+
+        <div class="col-md-4 offset-5">
+           
+            <button id="btn1"  class="btn btn1 shadow m-1" onmouseover="MouseOver(1)" onmouseout="OnMouseOut(1)" onclick="btnPressed(1)"></button>
+            <button id="btn2"  class="btn btn1 shadow m-1" onmouseover="MouseOver(2)" onmouseout="OnMouseOut(2)" onclick="btnPressed(2)"></button>
+            <button id="btn3"  class="btn btn1 shadow m-1" onmouseover="MouseOver(3)" onmouseout="OnMouseOut(3)" onclick="btnPressed(3)"></button>
+            <br>
+
+            <button id="btn4"  class="btn btn1 shadow m-1" onmouseover="MouseOver(4)" onmouseout="OnMouseOut(4)"  onclick="btnPressed(4)"></button>
+            <button id="btn5"  class="btn btn1 shadow m-1" onmouseover="MouseOver(5)" onmouseout="OnMouseOut(5)" onclick="btnPressed(5)"></button>
+            <button id="btn6"  class="btn btn1 shadow m-1" onmouseover="MouseOver(6)" onmouseout="OnMouseOut(6)" onclick="btnPressed(6)"></button>
+            <br>
+            <button id="btn7"  class="btn btn1 shadow m-1" onmouseover="MouseOver(7)" onmouseout="OnMouseOut(7)" onclick="btnPressed(7)"></button>
+            <button id="btn8"  class="btn btn1 shadow m-1" onmouseover="MouseOver(8)" onmouseout="OnMouseOut(8)" onclick="btnPressed(8)"></button>
+            <button id="btn9"  class="btn btn1 shadow m-1" onmouseover="MouseOver(9)" onmouseout="OnMouseOut(9)" onclick="btnPressed(9)"></button>
+
+
+        </div>
+        <div class="col-md-2 offset-5 my-2">
+            <div><span class="mx-2">Win:</span> <span id="winner_textbox" style="color: red;"></span></div>
+            <div class="btn btn-primary btn-sm" onclick="btnPressed(0)" style="margin-left: 50%;">Play Again</div>
+        </div>
+    </div>
+
+
+    <script src="./tictactoe.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
